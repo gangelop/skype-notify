@@ -49,6 +49,6 @@ case "$TYPE" in
 
 esac
 
-[ $SAY_NOTHING == true ] || notify-send --urgency $URGENCY \
+[ $SAY_NOTHING = true ] || notify-send --urgency $URGENCY \
                                         --icon skype \
                                         "skype - $TITLE" "$BODY"
