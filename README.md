@@ -1,6 +1,9 @@
 # skype-notify
 
-A simple bash script for displaying skype notifications via libnotify.
+A simple bash script for displaying skype notifications via libnotify and your notification deamon.  
+An example with "dunst":  
+![dunst.jpg](img/dunst.jpg)
+
 
 ## Usage
 
