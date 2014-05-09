@@ -4,7 +4,7 @@ A simple bash script for displaying skype notifications via libnotify.
 
 ## Usage
 
-1. Realise that you still need skype and mourn silently for 1 minute.
+1. Realise that you still need skype and mourn silently for 10 seconds.
 
 2. Clone this repo somewhere.  
 `git clone https://github.com/lathan/skype-notify.git`
