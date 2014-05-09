@@ -27,3 +27,7 @@ So, if for example you cloned this repo inside `~/git`, the above should look li
 6. Optionally, disable skype's pop-up notifications for events that you only want to be displayed by `skype-notify`.
 
 7. Skype has now been made less terrible. Rejoice at this realization.
+
+## Requirements
+
+`skype-notify` requires [libnotify](https://developer.gnome.org/notification-spec/).
