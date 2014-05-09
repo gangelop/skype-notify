@@ -16,7 +16,7 @@ Currently, four events are handled: Incoming calls, incoming chat messages, and 
 
 3. Open skype. Go to "options" (`CTRL+o`). Select the "Notifications" tab. Click "Advanced View"
 
-4. Check the box that says "Execute the following script on any event:". In it's input field you need to enter the following:  
+4. Check the box that says "Execute the following script on any event:". In its input field you need to enter the following:  
 `<path_to_script>/skype-notify.sh "%type" "%sskype" "%sname" "%smessage" "%fname" "%fpath" "%fsize`  
 So, if for example you cloned this repo inside `~/git`, the above should look like:  
 `~/git/skype-notify/skype-notify.sh "%type" "%sskype" "%sname" "%smessage" "%fname" "%fpath" "%fsize"`
