@@ -2,7 +2,7 @@
 
 # USAGE:
 # tell skype to execute the following line on any event:
-# skype-notif.sh "%type" "%sskype" "%sname" "%smessage" "%fname" "%fpath" "%fsize"
+# skype-notify.sh "%type" "%sskype" "%sname" "%smessage" "%fname" "%fpath" "%fsize"
 
 
 # read arguments
