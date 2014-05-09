@@ -49,12 +49,6 @@ case "$TYPE" in
 
 esac
 
-
-
-
-#notify-send "skype - $TYPE" "username: $USERNAME\ncontact: $CONTACT\nmsg: $MSG\nfname: $FNAME\nfpath: $FPATH\nfsize: $FSIZE"
-
 [ $SAY_NOTHING == true ] || notify-send --urgency $URGENCY \
                                         --icon skype \
                                         "skype - $TITLE" "$BODY"
-#notify-send "$TYPE"
