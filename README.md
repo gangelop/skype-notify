@@ -28,6 +28,11 @@ So, if for example you cloned this repo inside `~/git`, the above should look li
 
 7. Skype has now been made less terrible. Rejoice at this realization.
 
+## Hot Strings
+
+Sometimes things break. And then your boss is all like "Hey George, the site is fucked!". You can tell `skype-notify` to raise the urgency of a notification to 'critical' when it detects certain strings, like 'george' or 'fuck'. You can specify one case insensitive string per line in in the file `~/.config/skype-notify.strings`.
+
+
 ## Requirements
 
 `skype-notify` requires [libnotify](https://developer.gnome.org/notification-spec/).

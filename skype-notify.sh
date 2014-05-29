@@ -13,6 +13,7 @@ MSG=$4
 FNAME=$5
 FPATH=$6
 FSIZE=$7
+STRING_FILE="$HOME/.config/skype-notify.strings"
 
 TITLE=''
 BODY=''
@@ -48,6 +49,10 @@ case "$TYPE" in
     ;;
 
 esac
+
+
+echo "$MSG" | grep -i -f "$STRING_FILE" && URGENCY=critical
+
 
 [ $SAY_NOTHING = true ] || notify-send --urgency $URGENCY \
                                         --icon skype \
