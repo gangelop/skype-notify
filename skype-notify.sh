@@ -22,6 +22,14 @@ URGENCY="normal"
 case "$TYPE" in
 
     ChatIncoming)
+        # ugly hack
+        # Since skype 4.3, when the chang window is focused,
+        # a 'ChatIncoming' type event is generated but there is no
+        # '%smessage' which messes up the notification. This little check
+        # just suppresses the faulty notification in this case.
+        [ "$MSG" = "%fname" ] && SAY_NOTHING=true
+        # end ugly hack
+
         TITLE="$CONTACT"
         BODY="$MSG"
     ;;
