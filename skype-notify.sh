@@ -30,24 +30,27 @@ case "$TYPE" in
         [ "$MSG" = "%fname" ] && SAY_NOTHING=true
         # end ugly hack
 
-        TITLE="$CONTACT"
+        # since skype 4.3, the contact name is included in the %smessage
+        # which is silly. I'd rather have it in the title but
+        # we'll roll with it.
+        TITLE=""
         BODY="$MSG"
     ;;
 
     ContactOnline)
-        TITLE="$CONTACT"
+        TITLE=" - $CONTACT"
         BODY='appeared online'
         URGENCY='low'
     ;;
 
     ContactOffline)
-        TITLE="$CONTACT"
+        TITLE=" - $CONTACT"
         BODY='gone offline'
         URGENCY='low'
     ;;
 
     CallRingingIn)
-        TITLE="$CONTACT"
+        TITLE=" - $CONTACT"
         BODY='incoming call'
         URGENCY='critical'
     ;;
@@ -64,4 +67,4 @@ echo "$MSG" | grep -i -f "$STRING_FILE" && URGENCY=critical
 
 [ "$SAY_NOTHING" = true ] || notify-send --urgency $URGENCY \
                                         --icon skype \
-                                        "skype - $TITLE" "$BODY"
+                                        "skype$TITLE" "$BODY"
