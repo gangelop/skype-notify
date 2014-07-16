@@ -39,13 +39,13 @@ case "$TYPE" in
 
     ContactOnline)
         TITLE=" - $CONTACT"
-        BODY='appeared online'
+        BODY='● appeared online'
         URGENCY='low'
     ;;
 
     ContactOffline)
         TITLE=" - $CONTACT"
-        BODY='gone offline'
+        BODY='○ gone offline'
         URGENCY='low'
     ;;
 
