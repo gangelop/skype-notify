@@ -65,6 +65,6 @@ esac
 echo "$MSG" | grep -i -f "$STRING_FILE" && URGENCY=critical
 
 
-[ "$SAY_NOTHING" = true ] || notify-send --urgency $URGENCY \
+[ "$SAY_NOTHING" = true ] || notify-send -i skype --urgency $URGENCY \
                                         --icon skype \
                                         "skype$TITLE" "$BODY"
